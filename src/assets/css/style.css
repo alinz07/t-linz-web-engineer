@@ -1,0 +1,325 @@
+/* default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica,  Arial, sans-serif;
+}
+
+/* my variables for multiple instances of code  */
+:root {
+    --wood: #865c5e;
+    --green: #4d934d;
+    --white: #f5f5f5;
+    --pic-of-wood: url("../images/wood.jpg");
+    --round-border: 10px;
+}
+
+/* header and nav format  */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green);
+    color: var(--white);
+    height: 100px;
+}
+header h1 {
+    background-image: var(--pic-of-wood);
+    background-position: center;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    width: 30%;
+    padding: 10px;
+    text-align: end;
+    font-size: 60px;
+    height: fit-content;
+    border-radius: var(--round-border);
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    margin-right: 50px;
+}
+header nav ul li {
+    padding: 0 15px;
+    font-size: 1.55vw;
+    border-bottom: 3px solid var(--white);
+    margin: 0 10px;
+}
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* format hero image and webpage cool subtitle  */
+.hero {
+    background-image:url("../images/plants-reduces-stress.jpg");
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero img {
+    position:absolute;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 2;
+}
+.hero p {
+    position: absolute;
+    background-image: var(--pic-of-wood);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 78%;
+    left: 62%;
+    border-radius: var(--round-border);
+    padding: 5px 10px;
+}
+
+/*main content/large container class format  */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    color: var(--green);
+}
+.body-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px;
+}
+.section-title {
+    font-size: 4vw;
+    text-align: right;
+    border-right: 5px solid var(--green);
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* about me paragraphs  */
+#about-me div {
+    width: 75%;
+    height: fit-content;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+/* my work section formatting  */
+#my-work {
+    height: 70%;
+}
+.project-tiles {
+    width: 75%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-tile {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 10px 30px 0;
+    border: 5px solid var(--wood);
+}
+.project-img {
+    position: absolute;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+.project-img:hover {
+    opacity: 1;
+}
+#main-tile nav {
+    margin: 290px 0 20px 0;
+    position: absolute;
+}
+#main-tile-h3, #main-tile-h4 {
+    font-size: large;
+}
+.tile {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.tile container div{
+    height: 150px;
+    width: 48.3%;
+    border: 5px solid var(--wood);
+    position: relative;
+}
+.left-tiles {
+    margin: 5px 5px 10px 10px;
+}
+.right-tiles {
+    margin: 5px 10px 10px 5px;
+}
+.project-tiles nav {
+    position: absolute;
+    display: block;
+    background-color: var(--wood);
+    height: fit-content;
+    width: fit-content;
+    margin: 85px 0 10px 0;
+    padding: 3px;   
+    color: var(--white);
+    border-radius: 0 var(--round-border) var(--round-border) 0;
+}
+.project-tiles nav h3, .project-tiles nav h4 {
+    font-size: xx-small;
+    margin-top: 10px;
+}
+
+/* format contact info section  */
+#contact-info div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+#contact-info div a {
+        border-bottom: 5px solid var(--green);
+        text-decoration: none;
+        color: var(--green);
+        font-size: 20px;
+        padding: 10px;
+}
+
+/* media queries for screen less than 1800px */
+
+@media screen and (max-width: 1799px) {
+    /* less than 1799px  */
+    header h1 {
+        font-size: 3.75vw;
+    }
+    .hero p {
+        font-size: 2.75vw;
+    }
+    .tile div {
+        width: 47.8%;
+    }
+}
+
+@media screen and (max-width: 1288px) {
+    /* less than 1288px  */
+    .tile container div {
+        width: 47.5%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    /* less than 980px  */
+    header{
+        justify-content: center;
+        height: fit-content;
+    }
+    header h1 {
+        margin: 10px;
+        text-align: center;
+    }
+    header nav ul {
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    header nav ul li {
+        font-size: 3vw;
+    }
+
+    .hero img {
+        display: block;
+        position: static;
+        height: 50%;
+        margin: auto;
+    }
+    .hero p {
+        width:fit-content;
+        top: 80%;
+        left: 25%;
+        font-size: 4vw;
+    }
+
+    main {
+        justify-content: center;
+    }
+    .section-title {
+        width: 50%;
+        text-align: center;
+        border-bottom: 5px solid var(--green);
+        border-right: none;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .body-section {
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+    .body-section div {
+        text-align: justify;
+        font-size: 2.25vw;
+    }
+
+    #main-tile {
+        height: 300px;
+    }
+    #main-tile nav {
+        margin: 0;
+    }
+    .tile container div {
+        width: 46%;
+    }
+    #contact-info div {
+        width: 55%;
+    }
+    .project-tiles nav {
+        position: absolute;
+        margin: 0;
+        display: block;
+        background-color: var(--wood);
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;   
+        line-height: 15px; 
+        color: var(--white);
+        border-radius: 0 var(--round-border) var(--round-border) 0;
+    }
+}
+
+@media screen and (max-width: 552px) {
+
+    .body-section p {
+        font-size: large;
+        text-align: -webkit-auto;
+    }
+
+    .tile-container, .tile container div {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    #main-tile {
+        margin: auto;
+    }
+
+    .left-tiles > nav {
+        width: fit-content;
+    }
+}
