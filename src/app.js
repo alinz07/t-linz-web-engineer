@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./components/About";
+import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Project from "./components/Gallery";
-import Footer from "./components/Contact";
+import Project from "./components/Project";
+import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 
 function App() {
