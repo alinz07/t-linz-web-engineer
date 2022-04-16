@@ -7,7 +7,6 @@ function Header() {
             <h1>
                 <a>Anthony Linz</a>
             </h1>
-            <Nav />
             <section className="hero">
                 <img
                     src={require("../../assets/Profile Picture.PNG")}

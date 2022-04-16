@@ -1,24 +1,41 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+    const {
+        navOptions = [],
+        setCurrentNav,
+        currentNav,
+        contactSelected,
+        setContactSelected,
+    } = props;
     return (
-        <ul className="flex-row">
-            <li className="mx-2">
-                <a href="#about-me">About Me</a>
-            </li>
-
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="#contact-info">Contact Info</a>
-            </li>
-
-            <li>
-                <a href="resume.html">Resume</a>
-            </li>
-        </ul>
+        <nav>
+            <ul className="flex-row">
+                {navOptions.map((navOption) => (
+                    <li
+                        className={`mx-1 ${
+                            currentNav.name === navOption.name &&
+                            !contactSelected &&
+                            "navActive"
+                        }`}
+                        key={navOption.name}
+                    >
+                        <span
+                            onClick={() => {
+                                setCurrentNav(navOption);
+                                if (navOption === "Contact") {
+                                    setContactSelected(true);
+                                } else {
+                                    setContactSelected(false);
+                                }
+                            }}
+                        >
+                            {navOption.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
 }
 
