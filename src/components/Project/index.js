@@ -32,7 +32,7 @@ function Project() {
                             <a href="https://alinz07.github.io/run-buddy/">
                                 <img
                                     className="project-img"
-                                    src={require("../../assets/hero-bg.jpg")}
+                                    src={require("../../assets/run-buddy.jpg")}
                                     alt="Linked Run Buddy home page hero image of person tying shoe"
                                 />
                             </a>
