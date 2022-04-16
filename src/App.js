@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
+import About from "./components/About";
+import Footer from "./components/Footer";
 import Project from "./components/Project";
-// import Footer from "./components/Footer";
-import ContactForm from "./components/Contact";
+import Contact from "./components/Contact";
 
 function App() {
     const [contactSelected, setContactSelected] = useState(false);
@@ -17,16 +17,18 @@ function App() {
 
     return (
         <div>
-            <Header></Header>
-            <Nav
+            <Header
                 navOptions={navOptions}
                 setCurrentNav={setCurrentNav}
                 currentNav={currentNav}
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
-            ></Nav>
-            <Project></Project>
-            <ContactForm></ContactForm>
+            ></Header>
+            {currentNav.name === "About me" && <About></About>}
+            {currentNav.name === "Portfolio" && <Project></Project>}
+            {currentNav.name === "Contact" && <Contact></Contact>}
+            {currentNav.name === "Resume" && <p>resume</p>}
+            <Footer></Footer>
         </div>
     );
 }
