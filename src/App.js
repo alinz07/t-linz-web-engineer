@@ -4,6 +4,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
     const [contactSelected, setContactSelected] = useState(false);
@@ -14,6 +15,7 @@ function App() {
         { name: "Resume" },
     ]);
     const [currentNav, setCurrentNav] = useState(navOptions[0]);
+    const [thankYou, setThankYou] = useState(false);
 
     return (
         <div>
@@ -26,8 +28,13 @@ function App() {
             ></Header>
             {currentNav.name === "About me" && <About></About>}
             {currentNav.name === "Portfolio" && <Project></Project>}
-            {currentNav.name === "Contact" && <Contact></Contact>}
-            {currentNav.name === "Resume" && <p>resume</p>}
+            {currentNav.name === "Contact" && (
+                <Contact
+                    thankYou={thankYou}
+                    setThankYou={setThankYou}
+                ></Contact>
+            )}
+            {currentNav.name === "Resume" && <Resume></Resume>}
             <Footer></Footer>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../Contact";
 
 function Footer() {
     return (
@@ -9,11 +8,16 @@ function Footer() {
                 <h2 className="section-title">Contact Info</h2>
 
                 <div>
-                    <a>262.305.4411</a>
+                    <p>262.305.4411</p>
 
-                    <a href="mailto:tonyllinz@gmail.com">tonyllinz@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/tony-l-b19b0119/">
+                        Tony Linz on LinkedIn
+                    </a>
 
-                    <a href="https://github.com/alinz07">Anthony Linz Github</a>
+                    <a href="https://github.com/alinz07">Tony Linz Github</a>
+                    <a href="https://www.instagram.com/tonylinz07/">
+                        Tony Linz on Instagram
+                    </a>
                 </div>
             </section>
         </footer>
