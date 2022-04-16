@@ -1,6 +1,4 @@
 import React from "react";
-import Project from "../Project";
-import Contact from "../Contact";
 
 function Nav(props) {
     const {
@@ -10,6 +8,7 @@ function Nav(props) {
         contactSelected,
         setContactSelected,
     } = props;
+
     return (
         <nav>
             <ul className="flex-row">
