@@ -97,3 +97,5 @@ GIVEN a single-page application portfolio for a web developer<br/>
 <br/>
 
 ### **Credits**
+
+    background-image: url("./assets/ahmad-kadhim-unsplash.jpg");

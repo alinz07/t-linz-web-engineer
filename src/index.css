@@ -13,7 +13,7 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("./assets/rodion-kutsaev-unsplash.jpg");
+    background-image: url("./assets/ahmad-kadhim-unsplash.jpg");
     background-size: cover;
 }
 
@@ -25,7 +25,6 @@ code {
 #my-name,
 #subtitle {
     text-align: center;
-    background-color: var(--hunter-green);
     margin: 0px;
     padding: 20px;
 }
