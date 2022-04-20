@@ -1,4 +1,7 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import DeleteIcon from "@mui/icons-material/Delete";
+import Stack from "@mui/material/Stack";
 
 function Nav(props) {
     const {
@@ -11,10 +14,13 @@ function Nav(props) {
 
     return (
         <nav>
-            <ul className="flex-row">
+            <Stack direction="column">
                 {navOptions.map((navOption) => (
-                    <li
-                        className={`mx-1 ${
+                    <Button
+                        variant="contained"
+                        id="navBtn"
+                        startIcon={<DeleteIcon />}
+                        className={`${
                             currentNav.name === navOption.name &&
                             !contactSelected &&
                             "navActive"
@@ -33,9 +39,9 @@ function Nav(props) {
                         >
                             {navOption.name}
                         </span>
-                    </li>
+                    </Button>
                 ))}
-            </ul>
+            </Stack>
         </nav>
     );
 }

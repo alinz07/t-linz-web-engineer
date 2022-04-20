@@ -3,7 +3,6 @@ import React from "react";
 function Footer() {
     return (
         <footer>
-            {/* save space for a tree animation/picture */}
             <section className="body-section" id="contact-info">
                 <h2 className="section-title">Contact Info</h2>
 

@@ -13,7 +13,8 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("./assets/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg");
+    background-image: url("./assets/rodion-kutsaev-unsplash.jpg");
+    background-size: cover;
 }
 
 code {
@@ -21,12 +22,21 @@ code {
         monospace;
 }
 
-#my-name {
-    font-size: xxx-large;
+#my-name,
+#subtitle {
     text-align: center;
-    background-color: var(--laurel-green);
+    background-color: var(--hunter-green);
+    margin: 0px;
+    padding: 20px;
 }
 
 .navActive {
     border-bottom: 3px solid black;
+}
+
+#navBtn {
+    width: 175px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: larger;
 }
