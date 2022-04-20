@@ -33,7 +33,7 @@ function Project() {
                                 <img
                                     className="project-img"
                                     src={require("../../assets/run-buddy.jpg")}
-                                    alt="Linked Run Buddy home page hero image of person tying shoe"
+                                    alt="Run Buddy home page hero"
                                 />
                             </a>
                             <nav>
@@ -60,7 +60,7 @@ function Project() {
 
                     <div className="tile-div">
                         <div className="left-tiles">
-                            <a href="#">
+                            <a href="https://alinz07.github.io/run-buddy/">
                                 <img
                                     className="project-img"
                                     src={require("../../assets/wood.jpg")}
@@ -75,7 +75,7 @@ function Project() {
                         </div>
 
                         <div className="right-tiles">
-                            <a href="#">
+                            <a href="https://alinz07.github.io/run-buddy/">
                                 <img
                                     className="project-img"
                                     src={require("../../assets/wood.jpg")}
