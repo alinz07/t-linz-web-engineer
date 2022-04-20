@@ -1,3 +1,11 @@
+:root {
+    --antique-bronze: #5b5022ff;
+    --russian-green: #749d78ff;
+    --olive-drab-3: #839728ff;
+    --hunter-green: #3f6651ff;
+    --laurel-green: #afb494ff;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -5,11 +13,18 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url("./assets/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg");
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+#my-name {
+    font-size: xxx-large;
+    text-align: center;
+    background-color: var(--laurel-green);
 }
 
 .navActive {
