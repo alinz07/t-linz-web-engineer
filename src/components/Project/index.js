@@ -29,16 +29,19 @@ function Project() {
                 <section className="tile">
                     <div className="tile-div">
                         <div className="left-tiles">
-                            <a href="https://alinz07.github.io/run-buddy/">
+                            <a href="https://tons-tech-blog.herokuapp.com/">
                                 <img
                                     className="project-img"
-                                    src={require("../../assets/run-buddy.jpg")}
-                                    alt="Run Buddy home page hero"
+                                    src={require("../../assets/tons-tech-blog.png")}
+                                    alt="Ton's Tech Blog homepage"
                                 />
                             </a>
                             <nav>
-                                <h3>Run Buddy</h3>
-                                <h4>HTML, Advanced CSS</h4>
+                                <h3>Ton's Tech Blog</h3>
+                                <h4>
+                                    MVC paradigm, Handlebars.js, Sequelize
+                                    (ORM), Express-session, Node
+                                </h4>
                             </nav>
                         </div>
 
@@ -48,7 +51,6 @@ function Project() {
                                     className="project-img"
                                     src={require("../../assets/bookworm.png")}
                                     alt="wood background, will link to project when project is finished"
-                                    href="#"
                                 />
                             </a>
                             <nav>
@@ -60,32 +62,46 @@ function Project() {
 
                     <div className="tile-div">
                         <div className="left-tiles">
-                            <a href="https://alinz07.github.io/run-buddy/">
+                            <a href="https://alinz07.github.io/challenge-6/">
                                 <img
                                     className="project-img"
-                                    src={require("../../assets/wood.jpg")}
-                                    alt="wood background, will link to project when project is finished"
-                                    href="#"
+                                    src={require("../../assets/weather-dash.png")}
+                                    alt="Weather Dashboard homepage"
                                 />
                             </a>
                             <nav>
-                                <h3>Project 4</h3>
-                                <h4>Coming Soon!</h4>
+                                <h3>Weather Dashboard</h3>
+                                <h4>
+                                    Dynamic HTML and CSS, Bootstrap, Open
+                                    Weather API (server-side API)
+                                </h4>
                             </nav>
                         </div>
 
                         <div className="right-tiles">
-                            <a href="https://alinz07.github.io/run-buddy/">
+                            <a href="https://alinz07.github.io/photo-port/">
                                 <img
                                     className="project-img"
-                                    src={require("../../assets/wood.jpg")}
+                                    src={require("../../assets/photo-port.png")}
                                     alt="wood background, will link to project when project is finished"
-                                    href="#"
                                 />
                             </a>
                             <nav>
-                                <h3>project 5</h3>
-                                <h4>Coming Soon!</h4>
+                                <h3>Photo portfolio</h3>
+                                <h4>React.js, SPA, Jest</h4>
+                            </nav>
+                        </div>
+                        <div className="right-tiles">
+                            <a href="https://github.com/alinz07/budget-tracker-mod19/">
+                                <img
+                                    className="project-img"
+                                    src={require("../../assets/budget-tracker.png")}
+                                    alt="Budget Tracker homepage"
+                                />
+                            </a>
+                            <nav>
+                                <h3>Budget Tracker</h3>
+                                <h4>MongoDB/Atlas, Mongoose, IndexedDB</h4>
                             </nav>
                         </div>
                     </div>
