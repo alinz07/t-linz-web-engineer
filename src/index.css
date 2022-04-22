@@ -4,6 +4,9 @@
     --olive-drab-3: #839728ff;
     --hunter-green: #3f6651ff;
     --laurel-green: #afb494ff;
+    --spanish-grey-wood: url("./assets/lukas-blazek-unsplash.jpg");
+    --rich-wood: url("./assets/lazarescu-alexandra-unsplash.jpg");
+    --better-grey-wood: url("./assets/andrey-haimin-unsplash.jpg");
 }
 
 body {
@@ -13,7 +16,7 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("./assets/ahmad-kadhim-unsplash.jpg");
+    background-image: url("./assets/mitchell-luo-unsplash.jpg");
     background-size: cover;
 }
 
@@ -22,20 +25,98 @@ code {
         monospace;
 }
 
-#my-name,
-#subtitle {
+#header {
+    margin: auto;
+}
+
+#hero {
     text-align: center;
-    margin: 0px;
+    margin: 10px;
     padding: 20px;
+    background-image: var(--rich-wood);
+    background-size: cover;
+    border-radius: 15px;
+    border: 5px solid slategray;
 }
 
-.navActive {
-    border-bottom: 3px solid black;
+#hero > * {
+    margin: 10px 0;
+}
+#my-name {
+    font-size: 50px;
+}
+#subtitle {
+    font-size: xx-large;
 }
 
-#navBtn {
-    width: 175px;
+#navBtn,
+#navActive {
+    width: 190px;
     margin: auto;
     margin-top: 30px;
     font-size: larger;
+    background-image: var(--rich-wood);
+    background-size: cover;
+    border: 3px solid slategray;
+}
+
+#navActive {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+#eyecon {
+    font-size: xxx-large;
+}
+
+#react-card {
+    background-color: #39483e;
+    color: ivory;
+    margin: 40px auto;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#resume {
+    text-decoration: none;
+    color: ivory;
+    border: 3px solid slategrey;
+    border-radius: 4px;
+    padding: 10px;
+    background-image: var(--rich-wood);
+    background-size: cover;
+    font-weight: 700;
+}
+
+#tech-prof {
+    text-decoration: underline;
+}
+
+#skill {
+    font-size: large;
+    padding: 3px;
+}
+
+#contact-info {
+    background-color: #a29a97;
+    margin-top: 40px;
+    height: fit-content;
+}
+
+#contact-title {
+    font-size: xxx-large;
+    color: #39483e;
+    margin: 10px;
+}
+
+#contact-info > * {
+    font-size: x-large;
+    color: #39483e;
+    text-align: center;
+}
+
+.contact-anchor {
+    text-decoration: underline;
+    color: #39483e;
 }
