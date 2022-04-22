@@ -1,11 +1,30 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
 import Stack from "@mui/material/Stack";
+import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 
 function Nav(props) {
     const {
-        navOptions = [],
+        navOptions = [
+            {
+                name: "About me",
+                arrow: <ArrowBackOutlinedIcon id="eyecon" />,
+            },
+            {
+                name: "Portfolio",
+                arrow: <ArrowForwardOutlinedIcon id="eyecon" />,
+            },
+            {
+                name: "Contact",
+                arrow: <ArrowUpwardOutlinedIcon id="eyecon" />,
+            },
+            {
+                name: "Resume",
+                arrow: <ArrowForwardOutlinedIcon id="eyecon" />,
+            },
+        ],
         setCurrentNav,
         currentNav,
         contactSelected,
@@ -18,13 +37,13 @@ function Nav(props) {
                 {navOptions.map((navOption) => (
                     <Button
                         variant="contained"
-                        id="navBtn"
-                        startIcon={<DeleteIcon />}
-                        className={`${
+                        id={`${
                             currentNav.name === navOption.name &&
-                            !contactSelected &&
-                            "navActive"
+                            !contactSelected
+                                ? "navActive"
+                                : "navBtn"
                         }`}
+                        startIcon={navOption.arrow}
                         key={navOption.name}
                     >
                         <span

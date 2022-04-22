@@ -1,7 +1,91 @@
 import React from "react";
+import { Grid } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import image from "../../assets/homepages/bookworm.png";
 
 function Project() {
+    const projects = [
+        {
+            name: "National Parks Info and Weather",
+            tech: "HTML, CSS, Javascript, Jquery, Foundation by Zurb",
+            src: `{require("../../assets/national-parks-screenshot.png")}`,
+            alt: "National Parks homepage",
+            repo: "https://github.com/p-fassbender/national-parks-info-and-weather",
+            aitchref:
+                "https://p-fassbender.github.io/national-parks-info-and-weather/",
+        },
+        {
+            name: "Ton's Tech Blog",
+            tech: "MVC paradigm, Handlebars.js, Sequelize (ORM), Express-Session, Node",
+            src: `{require("../../assets/tons-tech-blog.png")}`,
+            alt: "Ton's Tech Blog homepage",
+            repo: "https://github.com/alinz07/mvc-techblog",
+            aitchref: "https://tons-tech-blog.herokuapp.com/",
+        },
+        {
+            name: "Bookworm Bookclub",
+            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars.js, MySQL, Sequelize ORM",
+            src: `{require("../../assets/bookworm.png")}`,
+            alt: "Bookworm homepage",
+            repo: "https://github.com/Hmlessard/Bookworm",
+            aitchref: "https://asgardians-bookworm.herokuapp.com/",
+        },
+        {
+            name: "Weather Dashboard",
+            tech: "Dynamic HTML and CSS, Bootstrap, Open Weather API (server-side API)",
+            src: `{require("../../assets/weather-dash.png")}`,
+            alt: "Weather Dashboard homepage",
+            repo: "https://github.com/alinz07/challenge-6",
+            aitchref: "https://alinz07.github.io/challenge-6/",
+        },
+        {
+            name: "Photo portfolio",
+            tech: "React.js, Jest",
+            src: `{require("../../assets/photo-port.png")}`,
+            alt: "Photo portfolio homepage",
+            repo: "https://github.com/alinz07/photo-port",
+            aitchref: "https://alinz07.github.io/photo-port/",
+        },
+        {
+            name: "Budget Tracker",
+            tech: "MongoDB/Atlas, Mongoose, IndexedDB, PWA",
+            src: `{require("../../assets/budget-tracker.png")}`,
+            alt: "Budget Tracker homepage",
+            repo: "https://github.com/alinz07/budget-tracker-mod19",
+            aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
+        },
+    ];
     return (
+        <Grid container>
+            {projects.map((project) => (
+                <Grid item xs={12} md={4} key={project.name}>
+                    <Card width={400} id="react-card">
+                        <CardMedia
+                            component="img"
+                            alt={project.alt}
+                            height="140"
+                            image={image}
+                        />
+                        <CardContent>
+                            <Grid container>
+                                <Grid item xs={12}>
+                                    <h2>{project.name}</h2>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <a href={project.aitchref}>Deployed App</a>
+                                </Grid>
+
+                                <Grid item xs={12}>
+                                    <a href={project.repo}>GitHub Repo</a>
+                                </Grid>
+                            </Grid>
+                        </CardContent>
+                    </Card>
+                </Grid>
+            ))}
+        </Grid>
         // <ul className="flex-row">
         //         {navOptions.map((navOption) => (
         //             <li
@@ -27,112 +111,6 @@ function Project() {
         //             </li>
         //         ))}
         //     </ul>
-        <section className="body-section" id="portfolio">
-            <h2 className="section-title">portfolio</h2>
-
-            <div className="project-tiles">
-                <section id="main-tile">
-                    <a href="https://p-fassbender.github.io/national-parks-info-and-weather/">
-                        <img
-                            className="project-img"
-                            src={require("../../assets/national-parks-screenshot.png")}
-                            alt="national parks web app screenshot"
-                            href="#"
-                        />
-                    </a>
-                    <nav>
-                        <h3 id="main-tile-h3">
-                            National Parks Info and Weather
-                        </h3>
-
-                        <h4 id="main-tile-h4">
-                            HTML, CSS, Javascript, Jquery, Foundation by Zurb,
-                        </h4>
-                    </nav>
-                </section>
-
-                <section className="tile">
-                    <div className="tile-div">
-                        <div className="left-tiles">
-                            <a href="https://tons-tech-blog.herokuapp.com/">
-                                <img
-                                    className="project-img"
-                                    src={require("../../assets/tons-tech-blog.png")}
-                                    alt="Ton's Tech Blog homepage"
-                                />
-                            </a>
-                            <nav>
-                                <h3>Ton's Tech Blog</h3>
-                                <h4>
-                                    MVC paradigm, Handlebars.js, Sequelize
-                                    (ORM), Express-session, Node
-                                </h4>
-                            </nav>
-                        </div>
-
-                        <div className="right-tiles">
-                            <a href="https://asgardians-bookworm.herokuapp.com/">
-                                <img
-                                    className="project-img"
-                                    src={require("../../assets/bookworm.png")}
-                                    alt="wood background, will link to project when project is finished"
-                                />
-                            </a>
-                            <nav>
-                                <h3>Bookworm</h3>
-                                <h4>Model View Controller-style bookclub</h4>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <div className="tile-div">
-                        <div className="left-tiles">
-                            <a href="https://alinz07.github.io/challenge-6/">
-                                <img
-                                    className="project-img"
-                                    src={require("../../assets/weather-dash.png")}
-                                    alt="Weather Dashboard homepage"
-                                />
-                            </a>
-                            <nav>
-                                <h3>Weather Dashboard</h3>
-                                <h4>
-                                    Dynamic HTML and CSS, Bootstrap, Open
-                                    Weather API (server-side API)
-                                </h4>
-                            </nav>
-                        </div>
-
-                        <div className="right-tiles">
-                            <a href="https://alinz07.github.io/photo-port/">
-                                <img
-                                    className="project-img"
-                                    src={require("../../assets/photo-port.png")}
-                                    alt="wood background, will link to project when project is finished"
-                                />
-                            </a>
-                            <nav>
-                                <h3>Photo portfolio</h3>
-                                <h4>React.js, SPA, Jest</h4>
-                            </nav>
-                        </div>
-                        <div className="right-tiles">
-                            <a href="https://github.com/alinz07/budget-tracker-mod19/">
-                                <img
-                                    className="project-img"
-                                    src={require("../../assets/budget-tracker.png")}
-                                    alt="Budget Tracker homepage"
-                                />
-                            </a>
-                            <nav>
-                                <h3>Budget Tracker</h3>
-                                <h4>MongoDB/Atlas, Mongoose, IndexedDB</h4>
-                            </nav>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
     );
 }
 

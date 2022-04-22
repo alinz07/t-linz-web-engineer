@@ -20,7 +20,6 @@ function App() {
     return (
         <div>
             <Header
-                navOptions={navOptions}
                 setCurrentNav={setCurrentNav}
                 currentNav={currentNav}
                 contactSelected={contactSelected}
