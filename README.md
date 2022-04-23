@@ -1,4 +1,4 @@
-# React Portfolio Mod20
+# React Portfolio
 
 <br/>
 
