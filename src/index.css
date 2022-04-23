@@ -4,9 +4,7 @@
     --olive-drab-3: #839728ff;
     --hunter-green: #3f6651ff;
     --laurel-green: #afb494ff;
-    --spanish-grey-wood: url("./assets/lukas-blazek-unsplash.jpg");
     --rich-wood: url("./assets/lazarescu-alexandra-unsplash.jpg");
-    --better-grey-wood: url("./assets/andrey-haimin-unsplash.jpg");
 }
 
 body {
@@ -135,4 +133,10 @@ code {
 .contact-anchor {
     text-decoration: underline;
     color: #39483e;
+}
+
+@media screen and (max-width: 400px) {
+    #react-card {
+        width: fit-content;
+    }
 }
