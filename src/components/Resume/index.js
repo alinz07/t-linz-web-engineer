@@ -46,7 +46,7 @@ function Resume() {
                 </Tooltip>
             </Grid>
             <Grid item pt={3} pb={1} fontSize={25}>
-                <h2 id="tech-prof">Tech Proficiencies</h2>
+                <h3 id="tech-prof">Tech Proficiencies</h3>
             </Grid>
             <ul id="tech-prof-ul" pt={0}>
                 {techStack.map((skill) => (

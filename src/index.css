@@ -6,7 +6,6 @@
     --laurel-green: #afb494ff;
     --rich-wood: url("./assets/lazarescu-alexandra-unsplash.jpg");
 }
-
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -17,16 +16,13 @@ body {
     background-image: url("./assets/mitchell-luo-unsplash.jpg");
     background-size: cover;
 }
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-
 #header {
     margin: auto;
 }
-
 #hero {
     text-align: center;
     padding: 20px;
@@ -35,7 +31,6 @@ code {
     border-radius: 15px;
     border: 5px solid saddlebrown;
 }
-
 #hero > * {
     margin: 10px 0;
 }
@@ -45,7 +40,6 @@ code {
 #subtitle {
     font-size: xx-large;
 }
-
 #navBtn,
 #navActive {
     width: 200px;
@@ -56,16 +50,13 @@ code {
     background-size: cover;
     border: 4px solid saddlebrown;
 }
-
 #navActive {
     text-decoration: underline;
     text-decoration-thickness: 5px;
 }
-
 #eyecon {
     font-size: xxx-large;
 }
-
 #react-card {
     background-color: #39483e;
     color: ivory;
@@ -75,17 +66,21 @@ code {
     border-radius: 15px;
     text-align: center;
 }
-
 #proj-link {
     text-decoration: none;
     color: #a29a97;
     font-size: x-large;
 }
-
 #port-tech-stack {
     text-decoration: underline;
 }
-
+#form-field {
+    background-color: ivory;
+    border-radius: 3px;
+}
+#contact-form > div > div:nth-child(3) > div {
+    background-color: ivory;
+}
 #resume {
     text-decoration: none;
     color: ivory;
@@ -96,45 +91,37 @@ code {
     background-size: cover;
     font-weight: 700;
 }
-
 #tech-prof {
     text-decoration: underline;
     margin-bottom: 0;
 }
-
 #tech-prof-ul {
     list-style: none;
 }
-
 #skill {
     font-size: large;
     padding: 3px;
     text-align: left;
 }
-
 #contact-info {
     background-color: #a29a97;
     height: fit-content;
     margin: 100px auto 0 auto;
 }
-
 #contact-title {
     font-size: xxx-large;
     color: #39483e;
     margin: 10px;
 }
-
 #contact-info > * {
     font-size: x-large;
     color: #39483e;
     text-align: center;
 }
-
 .contact-anchor {
     text-decoration: underline;
     color: #39483e;
 }
-
 @media screen and (max-width: 400px) {
     #react-card {
         width: fit-content;
