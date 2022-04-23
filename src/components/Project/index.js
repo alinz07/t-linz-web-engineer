@@ -1,16 +1,16 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Tooltip } from "@mui/material";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardActions";
+import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import image from "../../assets/homepages/bookworm.png";
+import LinkIcon from "@mui/icons-material/Link";
 
 function Project() {
     const projects = [
         {
             name: "National Parks Info and Weather",
             tech: "HTML, CSS, Javascript, Jquery, Foundation by Zurb",
-            src: `{require("../../assets/national-parks-screenshot.png")}`,
+            imgName: "national-parks-screenshot.png",
             alt: "National Parks homepage",
             repo: "https://github.com/p-fassbender/national-parks-info-and-weather",
             aitchref:
@@ -18,32 +18,32 @@ function Project() {
         },
         {
             name: "Ton's Tech Blog",
-            tech: "MVC paradigm, Handlebars.js, Sequelize (ORM), Express-Session, Node",
-            src: `{require("../../assets/tons-tech-blog.png")}`,
+            tech: "MVC paradigm, Handlebars, Sequelize (ORM), Express-Session, Node",
+            imgName: "tons-tech-blog.png",
             alt: "Ton's Tech Blog homepage",
             repo: "https://github.com/alinz07/mvc-techblog",
             aitchref: "https://tons-tech-blog.herokuapp.com/",
         },
         {
             name: "Bookworm Bookclub",
-            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars.js, MySQL, Sequelize ORM",
-            src: `{require("../../assets/bookworm.png")}`,
+            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars, MySQL, Sequelize ORM",
+            imgName: "bookworm.png",
             alt: "Bookworm homepage",
             repo: "https://github.com/Hmlessard/Bookworm",
             aitchref: "https://asgardians-bookworm.herokuapp.com/",
         },
         {
             name: "Weather Dashboard",
-            tech: "Dynamic HTML and CSS, Bootstrap, Open Weather API (server-side API)",
-            src: `{require("../../assets/weather-dash.png")}`,
+            tech: "Dynamic HTML and CSS, Bootstrap, Open Weather API",
+            imgName: "weather-dash.png",
             alt: "Weather Dashboard homepage",
             repo: "https://github.com/alinz07/challenge-6",
             aitchref: "https://alinz07.github.io/challenge-6/",
         },
         {
             name: "Photo portfolio",
-            tech: "React.js, Jest",
-            src: `{require("../../assets/photo-port.png")}`,
+            tech: "React, Jest",
+            imgName: "photo-port.png",
             alt: "Photo portfolio homepage",
             repo: "https://github.com/alinz07/photo-port",
             aitchref: "https://alinz07.github.io/photo-port/",
@@ -51,7 +51,7 @@ function Project() {
         {
             name: "Budget Tracker",
             tech: "MongoDB/Atlas, Mongoose, IndexedDB, PWA",
-            src: `{require("../../assets/budget-tracker.png")}`,
+            imgName: "budget-tracker.png",
             alt: "Budget Tracker homepage",
             repo: "https://github.com/alinz07/budget-tracker-mod19",
             aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
@@ -65,20 +65,55 @@ function Project() {
                         <CardMedia
                             component="img"
                             alt={project.alt}
-                            height="140"
-                            image={image}
+                            height="200"
+                            image={require(`../../assets/homepages/${project.imgName}`)}
                         />
                         <CardContent>
-                            <Grid container>
-                                <Grid item xs={12}>
-                                    <h2>{project.name}</h2>
+                            <Grid container alignItems="center">
+                                <Grid
+                                    fontSize="h4.fontSize"
+                                    p={2}
+                                    pb={1}
+                                    item
+                                    xs={12}
+                                >
+                                    {project.name}
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <a href={project.aitchref}>Deployed App</a>
+                                <Grid p={2} pt={2} item xs={6}>
+                                    <Tooltip title="Go to link">
+                                        <a
+                                            id="proj-link"
+                                            href={project.aitchref}
+                                        >
+                                            <LinkIcon /> Deployed App
+                                        </a>
+                                    </Tooltip>
                                 </Grid>
 
-                                <Grid item xs={12}>
-                                    <a href={project.repo}>GitHub Repo</a>
+                                <Grid p={2} pt={2} item xs={6}>
+                                    <Tooltip title="Go to link">
+                                        <a id="proj-link" href={project.repo}>
+                                            <LinkIcon /> GitHub Repo
+                                        </a>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid
+                                    mt={5}
+                                    p={2}
+                                    item
+                                    xs={12}
+                                    fontSize="h5.fontSize"
+                                    id="port-tech-stack"
+                                >
+                                    Tech Stack
+                                </Grid>
+                                <Grid
+                                    pt={1}
+                                    item
+                                    xs={12}
+                                    fontSize="h6.fontSize"
+                                >
+                                    {project.tech}
                                 </Grid>
                             </Grid>
                         </CardContent>
@@ -86,31 +121,6 @@ function Project() {
                 </Grid>
             ))}
         </Grid>
-        // <ul className="flex-row">
-        //         {navOptions.map((navOption) => (
-        //             <li
-        //                 className={`mx-1 ${
-        //                     currentNav.name === navOption.name &&
-        //                     !contactSelected &&
-        //                     "navActive"
-        //                 }`}
-        //                 key={navOption.name}
-        //             >
-        //                 <span
-        //                     onClick={() => {
-        //                         setCurrentNav(navOption);
-        //                         if (navOption === "Contact") {
-        //                             setContactSelected(true);
-        //                         } else {
-        //                             setContactSelected(false);
-        //                         }
-        //                     }}
-        //                 >
-        //                     {navOption.name}
-        //                 </span>
-        //             </li>
-        //         ))}
-        //     </ul>
     );
 }
 

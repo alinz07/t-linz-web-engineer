@@ -38,17 +38,17 @@ function Resume() {
             id="react-card"
             wrap="wrap"
         >
-            <Grid item p={2} fontSize={25}>
+            <Grid item p={2} fontSize={25} mt={2}>
                 <Tooltip title="download resume pdf">
                     <a id="resume" href={pdf} download>
                         Tony Linz Resume.pdf
                     </a>
                 </Tooltip>
             </Grid>
-            <Grid item p={2} fontSize={25}>
+            <Grid item pt={3} pb={1} fontSize={25}>
                 <h2 id="tech-prof">Tech Proficiencies</h2>
             </Grid>
-            <ul>
+            <ul id="tech-prof-ul" pt={0}>
                 {techStack.map((skill) => (
                     <li id="skill" key={skill}>
                         {skill}
