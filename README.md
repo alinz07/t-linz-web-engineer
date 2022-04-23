@@ -4,7 +4,7 @@
 
 ## **Link** to GitHub repo: https://github.com/alinz07/react-port-mod20
 
-## **Link** to app deployed to GitHub Pages:
+## **Link** to app deployed to GitHub Pages: https://alinz07.github.io/t-linz-web-engineer/
 
 <br/>
 
@@ -33,6 +33,7 @@ A portfolio with React helps set you apart from other developers who shy away fr
 
 ## **Things I learned**
 
+-   I got to know, intimately, the MUI react component library and MUI system CSS utilities. Even their most basic components add a lot to the polished look of the app.
 -   When trying to validate a successful contact form submission and render the About component instead of the Contact component, I learned about React refs. I learned that refs cannot be used on function components and didn't feel like restructuring the App function component into an extended React.Component class. I opted to use a set timeout function on the submission thank you message element. The timer changes the html element's state variable so that it unrenders after three seconds. I also noticed that a field is not properly validated if one uses autofill instead of clicking in the input field (focusing). So when the form is submitted, I render an error message if any of the form input was an empty string.
 -   I also cemented my knowledge of basic react app creation. Originally I tried to duplicate the files from the module where applicable, but one is not suppoesd to manually build a react app from scratch. I used the create-react-app command in git and it set up the initial file structure for me. Because I had already started to manually build the react app, I had to change my GitHub head, and then move the files to the correct react project folder. Fun stuff.
 
@@ -92,10 +93,10 @@ GIVEN a single-page application portfolio for a web developer<br/>
 
 ## **Screenshot of Web Application**
 
-![gif-of-webapp](./src/assets/mod-20.gif)
+![gif-of-webapp](./src/assets/react-port.gif)
 
 <br/>
 
 ### **Credits**
 
-    background-image: url("./assets/ahmad-kadhim-unsplash.jpg");
+Background-images courtesy of Alexandra Lazarescu and Mitchell Luo who provide complimentary images at Unsplash.com

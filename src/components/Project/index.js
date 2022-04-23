@@ -58,9 +58,9 @@ function Project() {
         },
     ];
     return (
-        <Grid container>
+        <Grid container display="flex" wrap="wrap">
             {projects.map((project) => (
-                <Grid item xs={12} md={4} key={project.name}>
+                <Grid item xs={12} md={6} xl={4} key={project.name}>
                     <Card width={400} id="react-card">
                         <CardMedia
                             component="img"

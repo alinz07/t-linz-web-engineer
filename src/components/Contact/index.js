@@ -129,7 +129,10 @@ function Contact(props) {
 
             {thankYou && (
                 <Grid item xs={12}>
-                    Thank you for submitting your information
+                    {/* Thank you for submitting your information */}
+                    Thank you for testing this page. I'm still working on a back
+                    end to capture data. Please contact me using the info in the
+                    gray footer below.
                 </Grid>
             )}
         </Grid>

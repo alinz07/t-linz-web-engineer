@@ -23,10 +23,11 @@ function About() {
                 />
             </Grid>
             <Grid item id="about-para" p={2}>
-                Full-Stack Web Development Bootcamp graduate from UWM. Hoping to
-                contribute to a company that cares about CSR and encourages me
-                to leverage my problem-solving and leadership skills while
-                exploring my passion for tech.
+                Full-Stack Coding Bootcamp graduate from the University of
+                Wisconsin, specializing in Python, SQL, MongoDB, Express, React
+                and OOP. Hoping to contribute to a company that cares about CSR
+                and encourages me to leverage my problem-solving and leadership
+                skills while exploring my passion for tech.
             </Grid>
         </Grid>
     );
