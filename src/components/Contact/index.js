@@ -1,5 +1,21 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import { Grid } from "@mui/material";
+import { TextField } from "@mui/material";
+import { Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import SendIcon from "@mui/icons-material/Send";
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: "#5b7886",
+        },
+        secondary: {
+            main: "#000000",
+        },
+    },
+});
 
 function Contact(props) {
     const [errorMessage, setErrorMessage] = useState("");
@@ -9,7 +25,6 @@ function Contact(props) {
         email: "",
         message: "",
     });
-    const { name, email, message } = formState;
 
     function handleChange(e) {
         if (e.target.name === "email") {
@@ -48,49 +63,76 @@ function Contact(props) {
         }, 3000);
     }
     return (
-        <section>
-            <h1>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        name="name"
-                        defaultValue={name}
-                        onBlur={handleChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        defaultValue={email}
-                        onBlur={handleChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                        name="message"
-                        rows="5"
-                        defaultValue={message}
-                        onBlur={handleChange}
-                    />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-                <button type="submit" data-testid="sub-btn">
-                    Submit
-                </button>
-            </form>
-            <div>
-                {thankYou && <p>Thank you for submitting your information</p>}
-            </div>
-        </section>
+        <Grid container id="react-card">
+            <Grid item m="auto">
+                <h1>Contact me</h1>
+            </Grid>
+            <Grid item>
+                <form id="contact-form" onSubmit={handleSubmit}>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={12} p={2}>
+                            <ThemeProvider theme={theme}>
+                                <TextField
+                                    p={1}
+                                    id="form-field"
+                                    label="Name"
+                                    onBlur={handleChange}
+                                    name="name"
+                                    variant="filled"
+                                />
+                            </ThemeProvider>
+                        </Grid>
+                        <Grid item xs={12} p={2}>
+                            <ThemeProvider theme={theme}>
+                                <TextField
+                                    id="form-field"
+                                    name="email"
+                                    label="Email"
+                                    onBlur={handleChange}
+                                    variant="filled"
+                                />
+                            </ThemeProvider>
+                        </Grid>
+                        <Grid item xs={12} p={2}>
+                            <ThemeProvider theme={theme}>
+                                <TextField
+                                    id="form-field"
+                                    label="Note"
+                                    name="message"
+                                    multiline
+                                    rows={5}
+                                    onBlur={handleChange}
+                                    variant="filled"
+                                />
+                            </ThemeProvider>
+                        </Grid>
+                        {errorMessage && (
+                            <Grid item xs={12} p={2}>
+                                <p className="error-text">{errorMessage}</p>
+                            </Grid>
+                        )}
+                        <Grid item xs={12} p={2}>
+                            <ThemeProvider theme={theme}>
+                                <Button
+                                    startIcon={<SendIcon />}
+                                    variant="contained"
+                                    type="submit"
+                                    color="primary"
+                                >
+                                    Submit
+                                </Button>
+                            </ThemeProvider>
+                        </Grid>
+                    </Grid>
+                </form>
+            </Grid>
+
+            {thankYou && (
+                <Grid item xs={12}>
+                    Thank you for submitting your information
+                </Grid>
+            )}
+        </Grid>
     );
 }
 

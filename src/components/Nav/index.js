@@ -35,7 +35,7 @@ function Nav(props) {
         <nav>
             <Grid container justifyContent="center" spacing={{ xs: 2, md: 10 }}>
                 {navOptions.map((navOption) => (
-                    <Grid item>
+                    <Grid item key={navOption.name}>
                         <Button
                             variant="contained"
                             id={`${
