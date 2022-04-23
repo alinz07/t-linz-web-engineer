@@ -3,7 +3,13 @@ import { Grid } from "@mui/material";
 
 function Footer() {
     return (
-        <Grid container alignItems="center" id="contact-info" wrap="wrap">
+        <Grid
+            container
+            alignItems="center"
+            id="contact-info"
+            justifyContent="center"
+            mt={10}
+        >
             <Grid item xs={12} md={3} p={2}>
                 <h2 id="contact-title">Contact Info</h2>
             </Grid>

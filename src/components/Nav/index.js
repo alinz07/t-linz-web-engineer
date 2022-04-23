@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+import { Grid } from "@mui/material";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
@@ -33,20 +33,19 @@ function Nav(props) {
 
     return (
         <nav>
-            <Stack direction="column">
+            <Grid container justifyContent="center" spacing={{ xs: 2, md: 10 }}>
                 {navOptions.map((navOption) => (
-                    <Button
-                        variant="contained"
-                        id={`${
-                            currentNav.name === navOption.name &&
-                            !contactSelected
-                                ? "navActive"
-                                : "navBtn"
-                        }`}
-                        startIcon={navOption.arrow}
-                        key={navOption.name}
-                    >
-                        <span
+                    <Grid item>
+                        <Button
+                            variant="contained"
+                            id={`${
+                                currentNav.name === navOption.name &&
+                                !contactSelected
+                                    ? "navActive"
+                                    : "navBtn"
+                            }`}
+                            startIcon={navOption.arrow}
+                            key={navOption.name}
                             onClick={() => {
                                 setCurrentNav(navOption);
                                 if (navOption === "Contact") {
@@ -57,10 +56,10 @@ function Nav(props) {
                             }}
                         >
                             {navOption.name}
-                        </span>
-                    </Button>
+                        </Button>
+                    </Grid>
                 ))}
-            </Stack>
+            </Grid>{" "}
         </nav>
     );
 }
