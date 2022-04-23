@@ -10,8 +10,8 @@ function Footer() {
             justifyContent="center"
             mt={10}
         >
-            <Grid item xs={12} md={3} p={2}>
-                <h2 id="contact-title">Contact Info</h2>
+            <Grid item xs={12} md={2} p={2}>
+                <h2 id="contact-title">Say hello</h2>
             </Grid>
 
             <Grid item xs={12} md={2} p={2}>

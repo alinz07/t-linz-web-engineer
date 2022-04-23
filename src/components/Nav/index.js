@@ -11,18 +11,22 @@ function Nav(props) {
             {
                 name: "About me",
                 arrow: <ArrowBackOutlinedIcon id="eyecon" />,
+                miles: " 0.1 MI",
             },
             {
                 name: "Portfolio",
                 arrow: <ArrowForwardOutlinedIcon id="eyecon" />,
+                miles: " 0.4 MI",
             },
             {
                 name: "Contact",
                 arrow: <ArrowUpwardOutlinedIcon id="eyecon" />,
+                miles: " 1.3 MI",
             },
             {
                 name: "Resume",
                 arrow: <ArrowForwardOutlinedIcon id="eyecon" />,
+                miles: " 1.7 MI",
             },
         ],
         setCurrentNav,
@@ -55,7 +59,8 @@ function Nav(props) {
                                 }
                             }}
                         >
-                            {navOption.name}
+                            {navOption.name}&nbsp;&nbsp;&nbsp;&nbsp;
+                            {navOption.miles}
                         </Button>
                     </Grid>
                 ))}
