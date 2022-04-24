@@ -1,8 +1,8 @@
 {
     "name": "react-port",
     "version": "1.0.0",
-    "description": "Tony Linz Professional Portfolio",
-    "homepage": "http://alinz07.github.io/t-linz-web-engineer",
+    "description": "Anthony Linz Professional Portfolio",
+    "homepage": "http://alinz07.github.io/react-port-mod20",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
