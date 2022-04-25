@@ -23,12 +23,18 @@ function About() {
                 />
             </Grid>
             <Grid item id="about-para" p={2}>
-                Full-Stack Web Engineer with a Certificate in Full Stack Coding
-                from the University of Wisconsin, specializing in Python, SQL,
-                MongoDB, Express, React and OOP. Hoping to contribute to a
-                company that cares about CSR and encourages me to leverage my
-                problem-solving and leadership skills while exploring my passion
-                for tech.
+                Full-Stack Web Engineer with a Certificate in Full-Stack Coding
+                from the University of Wisconsin-Milwaukee (May 2022), with a
+                background in Compliance and spoken Languages and experience
+                creating applications with MongoDB, Express, React and Node.
+                Hoping to contribute to a sustainable company that cares about
+                corporate-social responsibility and encourages team members to
+                explore their passions for tech. In addition to my newly
+                developed full-stack skills and enthusiasm for Python
+                algorithms, I’m looking to leverage my strong problem-solving
+                and leadership skills gained from leading a team of six
+                auditors, professionally, and 300+ volunteers for American
+                Cancer Society annual fundraisers.
             </Grid>
         </Grid>
     );
