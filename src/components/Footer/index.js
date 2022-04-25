@@ -26,7 +26,7 @@ function Footer() {
                         className="contact-anchor"
                         href="https://www.linkedin.com/in/tony-l-b19b0119/"
                     >
-                        Tony Linz on LinkedIn
+                        LinkedIn
                     </a>
                 </Grid>
                 <Grid item>
@@ -39,7 +39,7 @@ function Footer() {
                         className="contact-anchor"
                         href="https://github.com/alinz07"
                     >
-                        Tony Linz Github
+                        Github
                     </a>
                 </Grid>
 
@@ -53,7 +53,7 @@ function Footer() {
                         className="contact-anchor"
                         href="https://www.instagram.com/tonylinz07/"
                     >
-                        Tony Linz on Instagram
+                        Instagram
                     </a>
                 </Grid>
                 <Grid item>
