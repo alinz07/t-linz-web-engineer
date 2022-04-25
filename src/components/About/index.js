@@ -31,10 +31,10 @@ function About() {
                 corporate-social responsibility and encourages team members to
                 explore their passions for tech. In addition to my newly
                 developed full-stack skills and enthusiasm for Python
-                algorithms, I’m looking to leverage my strong problem-solving
-                and leadership skills gained from leading a team of six
-                auditors, professionally, and 300+ volunteers for American
-                Cancer Society annual fundraisers.
+                algorithms, I’m looking to leverage my strong problem-solving,
+                communication, teamwork and leadership skills gained from
+                leading a Team of six auditors, professionally, and 300+
+                volunteers for American Cancer Society annual fundraisers.
             </Grid>
         </Grid>
     );
