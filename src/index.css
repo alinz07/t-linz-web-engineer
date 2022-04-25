@@ -70,6 +70,9 @@ code {
     border-radius: 15px;
     text-align: center;
 }
+#about-para {
+    text-align: justify;
+}
 #proj-link {
     text-decoration: none;
     color: #a29a97;
