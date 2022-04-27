@@ -15,6 +15,7 @@ function Project() {
             repo: "https://github.com/p-fassbender/national-parks-info-and-weather",
             aitchref:
                 "https://p-fassbender.github.io/national-parks-info-and-weather/",
+            desc: "An application for hikers to view national parks in their state and a 5 day weather forecast to help them plan an adventure. My contributions include front and back-end development with a focus on dynamic HTML and parsing API JSON data.",
         },
         {
             name: "Ton's Tech Blog",
@@ -31,6 +32,7 @@ function Project() {
             alt: "Bookworm homepage",
             repo: "https://github.com/Hmlessard/Bookworm",
             aitchref: "https://asgardians-bookworm.herokuapp.com/",
+            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication,",
         },
         {
             name: "Weather Dashboard",
