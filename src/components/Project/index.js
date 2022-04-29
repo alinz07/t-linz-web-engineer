@@ -90,6 +90,8 @@ function Project() {
                                         <a
                                             id="proj-link"
                                             href={project.aitchref}
+                                            target="_blank"
+                                            rel="noreferrer"
                                         >
                                             <LinkIcon /> Deployed App
                                         </a>
