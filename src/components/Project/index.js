@@ -24,7 +24,7 @@ function Project() {
             alt: "Ton's Tech Blog homepage",
             repo: "https://github.com/alinz07/mvc-techblog",
             aitchref: "https://tons-tech-blog.herokuapp.com/",
-            desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication.",
+            desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. Login username: Bilbo  Password: Precious",
         },
         {
             name: "Bookworm Bookclub",
@@ -33,7 +33,7 @@ function Project() {
             alt: "Bookworm homepage",
             repo: "https://github.com/Hmlessard/Bookworm",
             aitchref: "https://asgardians-bookworm.herokuapp.com/",
-            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication,",
+            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication. Login username: Bilbo  Password: Precious",
         },
         {
             name: "Weather Dashboard",
