@@ -78,7 +78,8 @@ code {
     color: #a29a97;
     font-size: x-large;
 }
-#port-tech-stack {
+#port-tech-stack,
+#description {
     text-decoration: underline;
 }
 #form-field {

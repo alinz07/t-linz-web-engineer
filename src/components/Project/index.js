@@ -24,6 +24,7 @@ function Project() {
             alt: "Ton's Tech Blog homepage",
             repo: "https://github.com/alinz07/mvc-techblog",
             aitchref: "https://tons-tech-blog.herokuapp.com/",
+            desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication.",
         },
         {
             name: "Bookworm Bookclub",
@@ -41,6 +42,7 @@ function Project() {
             alt: "Weather Dashboard homepage",
             repo: "https://github.com/alinz07/challenge-6",
             aitchref: "https://alinz07.github.io/challenge-6/",
+            desc: "A weather forecast application leveraging the Open Weather API and parsing it's JSON data to generate dynamic HTML.",
         },
         {
             name: "Photo portfolio",
@@ -49,6 +51,7 @@ function Project() {
             alt: "Photo portfolio homepage",
             repo: "https://github.com/alinz07/photo-port",
             aitchref: "https://alinz07.github.io/photo-port/",
+            desc: "A mock Photographer's portfolio leveraging React and a suite of Jest tests for the components",
         },
         {
             name: "Budget Tracker",
@@ -57,6 +60,7 @@ function Project() {
             alt: "Budget Tracker homepage",
             repo: "https://github.com/alinz07/budget-tracker-mod19",
             aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
+            desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
         },
     ];
     return (
@@ -116,6 +120,24 @@ function Project() {
                                     fontSize="h6.fontSize"
                                 >
                                     {project.tech}
+                                </Grid>
+                                <Grid
+                                    mt={5}
+                                    p={2}
+                                    item
+                                    xs={12}
+                                    fontSize="h5.fontSize"
+                                    id="description"
+                                >
+                                    Motivation and Contribution
+                                </Grid>
+                                <Grid
+                                    pt={1}
+                                    item
+                                    xs={12}
+                                    fontSize="h6.fontSize"
+                                >
+                                    {project.desc}
                                 </Grid>
                             </Grid>
                         </CardContent>
