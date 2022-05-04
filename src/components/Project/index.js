@@ -8,6 +8,33 @@ import LinkIcon from "@mui/icons-material/Link";
 function Project() {
     const projects = [
         {
+            name: "Bookworm Bookclub",
+            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars, MySQL, Sequelize ORM",
+            imgName: "bookworm.png",
+            alt: "Bookworm homepage",
+            repo: "https://github.com/Hmlessard/Bookworm",
+            aitchref: "https://asgardians-bookworm.herokuapp.com/",
+            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication. Login username: Bilbo  Password: Precious",
+        },
+        {
+            name: "Photo portfolio",
+            tech: "React, Jest",
+            imgName: "photo-port.png",
+            alt: "Photo portfolio homepage",
+            repo: "https://github.com/alinz07/photo-port",
+            aitchref: "https://alinz07.github.io/photo-port/",
+            desc: "A mock Photographer's portfolio leveraging React and a suite of Jest tests for the components",
+        },
+        {
+            name: "Budget Tracker",
+            tech: "MongoDB/Atlas, Mongoose, IndexedDB, PWA",
+            imgName: "budget-tracker.png",
+            alt: "Budget Tracker homepage",
+            repo: "https://github.com/alinz07/budget-tracker-mod19",
+            aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
+            desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
+        },
+        {
             name: "National Parks Info and Weather",
             tech: "HTML, CSS, Javascript, Jquery, Foundation by Zurb",
             imgName: "national-parks-screenshot.png",
@@ -27,15 +54,6 @@ function Project() {
             desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. Login username: Bilbo  Password: Precious",
         },
         {
-            name: "Bookworm Bookclub",
-            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars, MySQL, Sequelize ORM",
-            imgName: "bookworm.png",
-            alt: "Bookworm homepage",
-            repo: "https://github.com/Hmlessard/Bookworm",
-            aitchref: "https://asgardians-bookworm.herokuapp.com/",
-            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication. Login username: Bilbo  Password: Precious",
-        },
-        {
             name: "Weather Dashboard",
             tech: "Dynamic HTML and CSS, Bootstrap, Open Weather API",
             imgName: "weather-dash.png",
@@ -43,24 +61,6 @@ function Project() {
             repo: "https://github.com/alinz07/challenge-6",
             aitchref: "https://alinz07.github.io/challenge-6/",
             desc: "A weather forecast application leveraging the Open Weather API and parsing it's JSON data to generate dynamic HTML.",
-        },
-        {
-            name: "Photo portfolio",
-            tech: "React, Jest",
-            imgName: "photo-port.png",
-            alt: "Photo portfolio homepage",
-            repo: "https://github.com/alinz07/photo-port",
-            aitchref: "https://alinz07.github.io/photo-port/",
-            desc: "A mock Photographer's portfolio leveraging React and a suite of Jest tests for the components",
-        },
-        {
-            name: "Budget Tracker",
-            tech: "MongoDB/Atlas, Mongoose, IndexedDB, PWA",
-            imgName: "budget-tracker.png",
-            alt: "Budget Tracker homepage",
-            repo: "https://github.com/alinz07/budget-tracker-mod19",
-            aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
-            desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
         },
     ];
     return (
