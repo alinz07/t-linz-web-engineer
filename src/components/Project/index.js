@@ -1,8 +1,5 @@
 import React from "react";
-import { Grid, Tooltip } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
+import { Grid, Tooltip, Card, CardMedia, CardContent } from "@mui/material";
 import LinkIcon from "@mui/icons-material/Link";
 
 function Project() {
