@@ -60,7 +60,7 @@ function Contact(props) {
         setThankYou(true);
         setTimeout(() => {
             setThankYou(false);
-        }, 3000);
+        }, 10000);
     }
     return (
         <Grid container id="react-card">
