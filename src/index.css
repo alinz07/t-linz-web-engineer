@@ -38,6 +38,10 @@ code {
 #hero > * {
     margin: 10px 0;
 }
+#nameboard-home-link {
+    text-decoration: none;
+    color: inherit;
+}
 #my-name {
     font-size: 50px;
 }
