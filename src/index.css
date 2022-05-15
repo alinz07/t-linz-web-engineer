@@ -33,6 +33,7 @@ code {
     background-size: cover;
     border-radius: 15px;
     border: 5px solid saddlebrown;
+    margin-top: 50px;
 }
 #hero > * {
     margin: 10px 0;

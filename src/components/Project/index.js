@@ -32,6 +32,15 @@ function Project() {
             desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
         },
         {
+            name: "Propagatorz",
+            tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
+            imgName: "propagatorz.png",
+            alt: "Propagatorz homepage",
+            repo: "https://github.com/alinz07/Propagatorz",
+            aitchref: "https://propagatorz-plant-help.herokuapp.com/",
+            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies.",
+        },
+        {
             name: "National Parks Info and Weather",
             tech: "HTML, CSS, Javascript, Jquery, Foundation by Zurb",
             imgName: "national-parks-screenshot.png",
@@ -49,15 +58,6 @@ function Project() {
             repo: "https://github.com/alinz07/mvc-techblog",
             aitchref: "https://tons-tech-blog.herokuapp.com/",
             desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. Login username: Bilbo  Password: Precious",
-        },
-        {
-            name: "Weather Dashboard",
-            tech: "Dynamic HTML and CSS, Bootstrap, Open Weather API",
-            imgName: "weather-dash.png",
-            alt: "Weather Dashboard homepage",
-            repo: "https://github.com/alinz07/challenge-6",
-            aitchref: "https://alinz07.github.io/challenge-6/",
-            desc: "A weather forecast application leveraging the Open Weather API and parsing it's JSON data to generate dynamic HTML.",
         },
     ];
     return (
