@@ -5,13 +5,13 @@ import LinkIcon from "@mui/icons-material/Link";
 function Project() {
     const projects = [
         {
-            name: "Bookworm Bookclub",
-            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars, MySQL, Sequelize ORM",
-            imgName: "bookworm.png",
-            alt: "Bookworm homepage",
-            repo: "https://github.com/Hmlessard/Bookworm",
-            aitchref: "https://asgardians-bookworm.herokuapp.com/",
-            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication. Login username: Bilbo  Password: Precious",
+            name: "Propagatorz",
+            tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
+            imgName: "propagatorz.png",
+            alt: "Propagatorz homepage",
+            repo: "https://github.com/alinz07/Propagatorz",
+            aitchref: "https://propagatorz-plant-help.herokuapp.com/",
+            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies.",
         },
         {
             name: "Photo portfolio",
@@ -32,13 +32,13 @@ function Project() {
             desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
         },
         {
-            name: "Propagatorz",
-            tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
-            imgName: "propagatorz.png",
-            alt: "Propagatorz homepage",
-            repo: "https://github.com/alinz07/Propagatorz",
-            aitchref: "https://propagatorz-plant-help.herokuapp.com/",
-            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies.",
+            name: "Bookworm Bookclub",
+            tech: "MVC paradigm, Node, Express, RESTful API, Handlebars, MySQL, Sequelize ORM",
+            imgName: "bookworm.png",
+            alt: "Bookworm homepage",
+            repo: "https://github.com/Hmlessard/Bookworm",
+            aitchref: "https://asgardians-bookworm.herokuapp.com/",
+            desc: "A bookclub web application that allows users to discuss their favorite reads, add new books to their list of books to read and delete them when done. This application's codebase was built using the MVC paradigm, using MySQL and the Sequelize ORM for the database, Handlebars.js for the views, and Express and Express Session with cookies for the RESTful APIs with authentication. Login username: Bilbo  Password: Precious",
         },
         {
             name: "National Parks Info and Weather",
