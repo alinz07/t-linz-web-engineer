@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/t-linz-web-engineer/static/css/main.4c7ee849.css",
+    "main.css": "/t-linz-web-engineer/static/css/main.18d32657.css",
     "main.js": "/t-linz-web-engineer/static/js/main.986f71dd.js",
     "static/js/787.510e8dec.chunk.js": "/t-linz-web-engineer/static/js/787.510e8dec.chunk.js",
     "static/media/lazarescu-alexandra-unsplash.jpg": "/t-linz-web-engineer/static/media/lazarescu-alexandra-unsplash.c3e0d89e868fc3eafc37.jpg",
@@ -14,12 +14,12 @@
     "static/media/tons-tech-blog.png": "/t-linz-web-engineer/static/media/tons-tech-blog.9b2bd471bd2767c2f5fb.png",
     "static/media/budget-tracker.png": "/t-linz-web-engineer/static/media/budget-tracker.ce69793c0d9c46b12681.png",
     "index.html": "/t-linz-web-engineer/index.html",
-    "main.4c7ee849.css.map": "/t-linz-web-engineer/static/css/main.4c7ee849.css.map",
+    "main.18d32657.css.map": "/t-linz-web-engineer/static/css/main.18d32657.css.map",
     "main.986f71dd.js.map": "/t-linz-web-engineer/static/js/main.986f71dd.js.map",
     "787.510e8dec.chunk.js.map": "/t-linz-web-engineer/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7ee849.css",
+    "static/css/main.18d32657.css",
     "static/js/main.986f71dd.js"
   ]
 }
