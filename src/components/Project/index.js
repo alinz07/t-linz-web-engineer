@@ -28,7 +28,7 @@ function Project() {
             imgName: "budget-tracker.png",
             alt: "Budget Tracker homepage",
             repo: "https://github.com/alinz07/budget-tracker-mod19",
-            aitchref: "https://github.com/alinz07/budget-tracker-mod19/",
+            aitchref: "https://budget-tracker-mod19-tlinz.herokuapp.com/",
             desc: "A Progressive Web Application that uses a MongoDB database, Mongoose for ORM and IndexedDB for data persistence.",
         },
         {
