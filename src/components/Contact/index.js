@@ -71,40 +71,34 @@ function Contact(props) {
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <Grid container justifyContent="center">
                         <Grid item xs={12} p={2}>
-                            <ThemeProvider theme={theme}>
-                                <TextField
-                                    p={1}
-                                    id="form-field"
-                                    label="Name"
-                                    onBlur={handleChange}
-                                    name="name"
-                                    variant="filled"
-                                />
-                            </ThemeProvider>
+                            <TextField
+                                p={1}
+                                id="form-field"
+                                label="Name"
+                                onBlur={handleChange}
+                                name="name"
+                                variant="filled"
+                            />
                         </Grid>
                         <Grid item xs={12} p={2}>
-                            <ThemeProvider theme={theme}>
-                                <TextField
-                                    id="form-field"
-                                    name="email"
-                                    label="Email"
-                                    onBlur={handleChange}
-                                    variant="filled"
-                                />
-                            </ThemeProvider>
+                            <TextField
+                                id="form-field"
+                                name="email"
+                                label="Email"
+                                onBlur={handleChange}
+                                variant="filled"
+                            />
                         </Grid>
                         <Grid item xs={12} p={2}>
-                            <ThemeProvider theme={theme}>
-                                <TextField
-                                    id="form-field"
-                                    label="Note"
-                                    name="message"
-                                    multiline
-                                    rows={5}
-                                    onBlur={handleChange}
-                                    variant="filled"
-                                />
-                            </ThemeProvider>
+                            <TextField
+                                id="form-field"
+                                label="Note"
+                                name="message"
+                                multiline
+                                rows={5}
+                                onBlur={handleChange}
+                                variant="filled"
+                            />
                         </Grid>
                         {errorMessage && (
                             <Grid item xs={12} p={2}>
