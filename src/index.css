@@ -91,9 +91,13 @@ code {
     background-color: ivory;
     border-radius: 3px;
 }
+
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+.css-i44wyl,
+.css-i44wyl,
+.css-i44wyl {
     width: 100%;
 }
 #contact-form > div > div:nth-child(3) > div {
