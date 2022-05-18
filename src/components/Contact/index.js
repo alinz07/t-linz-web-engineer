@@ -46,9 +46,36 @@ function Contact(props) {
         }
     }
 
+    async function submitData() {
+        fetch(
+            "https://lit-oasis-13031.herokuapp.com/https://t-linz-we-contact.herokuapp.com/api/formsubs",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: JSON.stringify({
+                    name: formState.name,
+                    email: formState.email,
+                    note: formState.message,
+                }),
+            }
+        ).then((response) => {
+            if (response.ok) {
+                console.log(response);
+
+                return;
+            } else {
+                console.log(response.statusText);
+                return;
+            }
+        });
+    }
+
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        submitData();
         for (const property in formState) {
             if (!formState[property]) {
                 setErrorMessage(
@@ -60,7 +87,8 @@ function Contact(props) {
         setThankYou(true);
         setTimeout(() => {
             setThankYou(false);
-        }, 10000);
+            window.location.reload();
+        }, 5000);
     }
     return (
         <Grid container id="react-card">
@@ -124,9 +152,9 @@ function Contact(props) {
             {thankYou && (
                 <Grid item xs={12}>
                     {/* Thank you for submitting your information */}
-                    Thank you for testing this page. I'm still working on a back
-                    end to capture data. Please contact me using the info in the
-                    gray footer below.
+                    Thank you for reaching out! If I take too long to reply it's
+                    best to reach me on LinkedIn: my profile link is in the
+                    footer.
                 </Grid>
             )}
         </Grid>
