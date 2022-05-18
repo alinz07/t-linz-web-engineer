@@ -92,7 +92,7 @@ code {
     border-radius: 3px;
 }
 
-#contact-form > div > div:nth-child(3) > div {
+#contact-form > div > div > div {
     background-color: ivory;
     width: 100%;
 }
