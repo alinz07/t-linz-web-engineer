@@ -92,13 +92,9 @@ code {
     border-radius: 3px;
 }
 
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-    width: 100%;
-}
 #contact-form > div > div:nth-child(3) > div {
     background-color: ivory;
+    width: 100%;
 }
 #resume {
     text-decoration: none;
