@@ -23,30 +23,31 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-#header {
-    margin: auto;
-}
+
 #hero {
     text-align: center;
     padding: 20px;
     background-image: var(--rich-wood);
     background-size: cover;
     border-radius: 15px;
-    border: 5px solid saddlebrown;
-    margin-top: 50px;
-}
-#hero > * {
-    margin: 10px 0;
+    border: 3px solid saddlebrown;
+    margin-top: 80px;
 }
 #nameboard-home-link {
     text-decoration: none;
     color: inherit;
+}
+#nameboard-home-link > * {
+    margin: 10px auto;
 }
 #my-name {
     font-size: 50px;
 }
 #subtitle {
     font-size: xx-large;
+}
+#nav-btn-div {
+    padding: 0;
 }
 #navBtn,
 #navActive {
@@ -69,8 +70,7 @@ code {
 #react-card {
     background-color: #39483e;
     color: ivory;
-    margin: 40px auto;
-    width: 400px;
+    width: 700px;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -111,8 +111,10 @@ code {
     text-decoration: underline;
     margin-bottom: 0;
 }
-#tech-prof-ul {
+#tech-prof-ul,
+#tech-prof-ul-2 {
     list-style: none;
+    padding-left: 0;
 }
 #skill {
     font-size: large;
@@ -122,7 +124,6 @@ code {
 #contact-info {
     background-color: #a29a97;
     height: fit-content;
-    margin-top: 100px;
 }
 #contact-title {
     font-size: xx-large;
@@ -132,7 +133,8 @@ code {
 #contact-info > * {
     font-size: large;
     color: #39483e;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
     font-weight: 600;
 }
 .contact-anchor {
@@ -142,5 +144,15 @@ code {
 @media screen and (max-width: 400px) {
     #react-card {
         width: fit-content;
+    }
+}
+@media screen and (max-width: 1199px) {
+    #react-card {
+        width: 700px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    #react-card {
+        width: 550px;
     }
 }

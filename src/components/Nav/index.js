@@ -34,38 +34,41 @@ function Nav(props) {
         contactSelected,
         setContactSelected,
     } = props;
-
     return (
-        <nav>
-            <Grid container justifyContent="center" spacing={{ xs: 2, md: 10 }}>
-                {navOptions.map((navOption) => (
-                    <Grid item key={navOption.name}>
-                        <Button
-                            variant="contained"
-                            id={`${
-                                currentNav.name === navOption.name &&
-                                !contactSelected
-                                    ? "navActive"
-                                    : "navBtn"
-                            }`}
-                            startIcon={navOption.arrow}
-                            key={navOption.name}
-                            onClick={() => {
-                                setCurrentNav(navOption);
-                                if (navOption === "Contact") {
-                                    setContactSelected(true);
-                                } else {
-                                    setContactSelected(false);
-                                }
-                            }}
-                        >
-                            {navOption.name}&nbsp;&nbsp;&nbsp;&nbsp;
-                            {navOption.miles}
-                        </Button>
-                    </Grid>
-                ))}
-            </Grid>{" "}
-        </nav>
+        <Grid
+            container
+            item
+            id="nav-container"
+            xs={12}
+            justifyContent="space-evenly"
+        >
+            {navOptions.map((navOption) => (
+                <Grid item key={navOption.name} id="nav-btn-div">
+                    <Button
+                        variant="contained"
+                        id={`${
+                            currentNav.name === navOption.name &&
+                            !contactSelected
+                                ? "navActive"
+                                : "navBtn"
+                        }`}
+                        startIcon={navOption.arrow}
+                        key={navOption.name}
+                        onClick={() => {
+                            setCurrentNav(navOption);
+                            if (navOption === "Contact") {
+                                setContactSelected(true);
+                            } else {
+                                setContactSelected(false);
+                            }
+                        }}
+                    >
+                        {navOption.name}&nbsp;&nbsp;&nbsp;&nbsp;
+                        {navOption.miles}
+                    </Button>
+                </Grid>
+            ))}
+        </Grid>
     );
 }
 

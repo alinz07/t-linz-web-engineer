@@ -11,6 +11,8 @@ function About() {
             alignItems="center"
             id="react-card"
             wrap="wrap"
+            mx="auto"
+            my={9}
         >
             <Grid item p={2} fontSize={25}>
                 <h2 id="about-title">About Me</h2>

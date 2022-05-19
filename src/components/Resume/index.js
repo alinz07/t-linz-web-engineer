@@ -22,6 +22,8 @@ function Resume() {
         "jQuery",
         "MongoDB Express.js React Node (MERN)",
         "Mongoose",
+    ];
+    const techStack2 = [
         "Model-View-Controller (MVC) paradigm",
         "MUI React component library",
         "MySQL2",
@@ -32,7 +34,6 @@ function Resume() {
         "Python",
         "Sequelize",
     ];
-
     return (
         <Grid
             container
@@ -41,6 +42,7 @@ function Resume() {
             alignItems="center"
             id="react-card"
             wrap="wrap"
+            m="auto"
         >
             <Grid item p={2} mt={2} xs={12}>
                 <Tooltip title="download resume pdf">
@@ -52,13 +54,26 @@ function Resume() {
             <Grid item pt={3} pb={1} fontSize={25}>
                 <h3 id="tech-prof">Tech Proficiencies</h3>
             </Grid>
-            <ul id="tech-prof-ul" pt={0}>
-                {techStack.map((skill) => (
-                    <li id="skill" key={skill}>
-                        {skill}
-                    </li>
-                ))}
-            </ul>
+            <Grid item container justifyContent="space-around">
+                <Grid item xs={5} textAlign="center">
+                    <ul id="tech-prof-ul" pt={0}>
+                        {techStack.map((skill) => (
+                            <li id="skill" key={skill}>
+                                {skill}
+                            </li>
+                        ))}
+                    </ul>
+                </Grid>
+                <Grid item xs={5} textAlign="center">
+                    <ul id="tech-prof-ul-2" pt={0}>
+                        {techStack2.map((skill) => (
+                            <li id="skill" key={skill}>
+                                {skill}
+                            </li>
+                        ))}
+                    </ul>
+                </Grid>
+            </Grid>
         </Grid>
     );
 }

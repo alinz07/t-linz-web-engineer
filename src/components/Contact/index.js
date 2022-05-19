@@ -91,7 +91,7 @@ function Contact(props) {
         }, 5000);
     }
     return (
-        <Grid container id="react-card">
+        <Grid container id="react-card" m="auto">
             <Grid item m="auto">
                 <h1>Contact me</h1>
             </Grid>

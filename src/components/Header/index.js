@@ -14,13 +14,13 @@ function Header(props) {
             alignItems="center"
             id="header"
         >
-            <a href="/" id="nameboard-home-link">
-                <Grid item xs={12} id="hero" mt={3}>
+            <Grid item xs={12} id="hero" mt={3}>
+                <a href="/" id="nameboard-home-link">
                     <h1 id="my-name">Tony Linz</h1>
                     <h2 id="subtitle">Full Stack Web Engineer</h2>
-                </Grid>
-            </a>
-            <Grid item xs={12} mt={3} mb={10}>
+                </a>
+            </Grid>
+            <Grid item xs={12} mt={3} mb={10} id="nav-grid-item" container>
                 <Nav
                     setCurrentNav={setCurrentNav}
                     currentNav={currentNav}

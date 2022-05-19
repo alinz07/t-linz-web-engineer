@@ -11,7 +11,7 @@ function Project() {
             alt: "Propagatorz homepage",
             repo: "https://github.com/alinz07/Propagatorz",
             aitchref: "https://propagatorz-plant-help.herokuapp.com/",
-            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies. My contributions were on the back and front-end. I set up the express server to connect to MongoDB, Mongoose, GraphQL and Apollo Server, set up global state, actions and reducers, wrote mutations and queries, added CSS and coded the post and update post form components.",
+            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies. My contributions were on the back and front-end. I set up the express server to connect to MongoDB, Mongoose, GraphQL and Apollo Server, set up global state, actions and reducers, wrote mutations and queries, added CSS and coded the post and update post form components. Login: betty@email.com Password: password",
         },
         {
             name: "Photo portfolio",
@@ -57,14 +57,27 @@ function Project() {
             alt: "Ton's Tech Blog homepage",
             repo: "https://github.com/alinz07/mvc-techblog",
             aitchref: "https://tons-tech-blog.herokuapp.com/",
-            desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. I was the sole contributor. Login username: Bilbo  Password: Precious",
+            desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. I was the sole contributor. Login username: bilbo  Password: precious",
         },
     ];
     return (
-        <Grid container display="flex" wrap="wrap">
+        <Grid
+            container
+            display="flex"
+            wrap="wrap"
+            justifyContent="space-evenly"
+        >
             {projects.map((project) => (
-                <Grid item xs={12} md={6} xl={4} key={project.name}>
-                    <Card width={400} id="react-card">
+                <Grid
+                    item
+                    container
+                    xs={12}
+                    lg={6}
+                    key={project.name}
+                    justifyContent="center"
+                    my={5}
+                >
+                    <Card id="react-card">
                         <CardMedia
                             component="img"
                             alt={project.alt}
