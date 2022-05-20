@@ -4,7 +4,7 @@
 
 ## **Link** to GitHub repo: https://github.com/alinz07/react-port-mod20
 
-## **Link** to app deployed to GitHub Pages: https://alinz07.github.io/t-linz-web-engineer/
+## **Link** to app deployed on GitHub Pages: https://alinz07.github.io/t-linz-web-engineer/
 
 <br/>
 
