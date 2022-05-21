@@ -8,9 +8,9 @@
 
 <br/>
 
-## **Motivation**
+## **Motivation and Overview**
 
-Create a portfolio, using React.
+Create my portfolio using React. Because there is no db, the lion's share of the code is in the src folder where I've separated out the navigation, projects, contact me, resume and footer components. I used only one utility function for validating emails in the contact component and that function is in a separate utils folder. Also in the src folder are the react app and index files that render the components as well as the css file, all of which get copied into the public and build folder when I deploy to GitHub Pages.
 
 <br/>
 
