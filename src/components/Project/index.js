@@ -5,15 +5,6 @@ import LinkIcon from "@mui/icons-material/Link";
 function Project() {
     const projects = [
         {
-            name: "Propagatorz",
-            tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
-            imgName: "propagatorz.png",
-            alt: "Propagatorz homepage",
-            repo: "https://github.com/alinz07/Propagatorz",
-            aitchref: "https://propagatorz-plant-help.herokuapp.com/",
-            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies. My contributions were on the back and front-end. I set up the express server to connect to MongoDB, Mongoose, GraphQL and Apollo Server, set up global state, actions and reducers, wrote mutations and queries, added CSS and coded the post and update post form components. Login: betty@email.com Password: password",
-        },
-        {
             name: "Photo portfolio",
             tech: "React, Jest",
             imgName: "photo-port.png",
@@ -49,6 +40,15 @@ function Project() {
             aitchref:
                 "https://p-fassbender.github.io/national-parks-info-and-weather/",
             desc: "An application for hikers to view national parks in their state and a 5 day weather forecast to help them plan an adventure. My contributions included dynamic HTML scripts and CSS, as well as parsing API JSON data for the National Parks and Weather API.",
+        },
+        {
+            name: "Propagatorz",
+            tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
+            imgName: "propagatorz.png",
+            alt: "Propagatorz homepage",
+            repo: "https://github.com/alinz07/Propagatorz",
+            aitchref: "https://propagatorz-plant-help.herokuapp.com/",
+            desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies. My contributions were on the back and front-end. I set up the express server to connect to MongoDB, Mongoose, GraphQL and Apollo Server, set up global state, actions and reducers, wrote mutations and queries, added CSS and coded the post and update post form components. Login: betty@email.com Password: password",
         },
         {
             name: "Ton's Tech Blog",
