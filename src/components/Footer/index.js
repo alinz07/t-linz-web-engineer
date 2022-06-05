@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Tooltip } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -58,6 +58,18 @@ function Footer() {
                 </Grid>
                 <Grid item>
                     <InstagramIcon />
+                </Grid>
+            </Grid>
+            <Grid item xs={12} md={2} p={2} container>
+                <Grid item pr={1}>
+                    <Tooltip title="Email Tony">
+                        <a
+                            className="contact-anchor"
+                            href="mailto:TonyLLinz@gmail.com/"
+                        >
+                            TonyLLinz@gmail.com
+                        </a>
+                    </Tooltip>
                 </Grid>
             </Grid>
         </Grid>

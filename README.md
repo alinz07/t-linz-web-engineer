@@ -10,16 +10,17 @@
 
 ## **Motivation and Overview**
 
-Create my portfolio using React. Because there is no db, the lion's share of the code is in the src folder where I've separated out the navigation, projects, contact me, resume and footer components. I used only one utility function for validating emails in the contact component and that function is in a separate utils folder. Also in the src folder are the react app and index files that render the components as well as the css file, all of which get copied into the public and build folder when I deploy to GitHub Pages.
+This application is my portfolio, created using React.js. Because there is no db, the lion's share of the code is in the src folder where I've separated out the navigation, projects, contact me, resume and footer components. I used only one utility function for validating emails in the contact component and that function is in a separate utils folder. Also in the src folder are the react app and index files that render the components as well as the css file, all of which get copied into the public and build folder when I deploy to GitHub Pages.
 
 <br/>
 
 ## **Table of Contents**
 
 [How and Why?](#what-problem-does-this-solve-and-how-was-a-solution-accomplished) <br/>
+[Tech Used](#technologies-used) <br/>
 [Things I learned](#things-i-learned) <br/>
 [What makes this project stand out?](#what-makes-this-project-stand-out) <br/>
-[Challenge Criteria](#challenge-criteria)<br/>
+[User Story](#user-story)<br/>
 [Screenshot of Web Application](#screenshot-of-web-application)<br/>
 [Credits](#credits)<br/>
 
@@ -28,6 +29,18 @@ Create my portfolio using React. Because there is no db, the lion's share of the
 ## **What Problem does this solve and how was a solution accomplished?**
 
 A portfolio with React helps set you apart from other developers who shy away from the latest technologies. A Single Page Application build with React is a great place for me to share my projects with propspective employers and fellow developers, with whom I can collaborate on current/future projects.
+
+<br/>
+
+## **Technologies Used**
+
+-   React.js
+-   JSX
+-   MUI component library
+-   Javascript
+-   HTML
+-   CSS
+-   GitHub Pages
 
 <br/>
 
@@ -45,7 +58,7 @@ A portfolio with React helps set you apart from other developers who shy away fr
 
 <br/>
 
-## **Challenge Criteria**
+## **User Story**
 
 AS AN employer looking for candidates with experience building single-page applications
 I WANT to view a potential employee's deployed React portfolio of work samples
