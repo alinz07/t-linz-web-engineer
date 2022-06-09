@@ -13,6 +13,7 @@
 [Motvation and Overview](#motivation-and-overview) <br/>
 [Tech Used](#technologies-used) <br/>
 [User Story](#user-story)<br/>
+[Instructions to Run App](#instructions-to-run-app)<br/>
 [Screenshot](#screenshot)<br/>
 [Things I learned](#things-i-learned) <br/>
 [What makes this project stand out?](#what-makes-this-project-stand-out) <br/>
@@ -83,6 +84,35 @@ GIVEN a single-page application portfolio for a web developer<br/>
 
 -   WHEN I view the footer<br/>
     THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+
+<br/>
+
+## **Instructions to Run App**
+
+1. Clone Repository:
+
+```
+git clone https://github.com/alinz07/sql-employee-tracker.git
+```
+
+2. Install Dependencies:
+
+Ensure you have Node.js installed on your machine. https://nodejs.org/en/download/
+
+Then, from the root directory:
+
+```
+npm i
+```
+
+3. Start Application on localhost:
+   From the root directory:
+
+```
+npm start
+```
+
+Application will automatically load at http://localhost:3001/ when you run the start command
 
 <br/>
 
