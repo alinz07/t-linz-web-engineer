@@ -8,27 +8,23 @@
 
 <br/>
 
-## **Motivation and Overview**
-
-This application is my portfolio, created using React.js. Because there is no db, the lion's share of the code is in the src folder where I've separated out the navigation, projects, contact me, resume and footer components. I used only one utility function for validating emails in the contact component and that function is in a separate utils folder. Also in the src folder are the react app and index files that render the components as well as the css file, all of which get copied into the public and build folder when I deploy to GitHub Pages.
-
-<br/>
-
 ## **Table of Contents**
 
-[How and Why?](#what-problem-does-this-solve-and-how-was-a-solution-accomplished) <br/>
+[Motvation and Overview](#motivation-and-overview) <br/>
 [Tech Used](#technologies-used) <br/>
+[User Story](#user-story)<br/>
+[Screenshot](#screenshot)<br/>
 [Things I learned](#things-i-learned) <br/>
 [What makes this project stand out?](#what-makes-this-project-stand-out) <br/>
-[User Story](#user-story)<br/>
-[Screenshot of Web Application](#screenshot-of-web-application)<br/>
 [Credits](#credits)<br/>
 
 <br/>
 
-## **What Problem does this solve and how was a solution accomplished?**
+## **Motivation and Overview**
 
 A portfolio with React helps set you apart from other developers who shy away from the latest technologies. A Single Page Application build with React is a great place for me to share my projects with propspective employers and fellow developers, with whom I can collaborate on current/future projects.
+
+This application is my portfolio, created using React.js. Because there is no db, the lion's share of the code is in the src folder where I've separated out the navigation, projects, contact me, resume and footer components. I used only one utility function for validating emails in the contact component and that function is in a separate utils folder. Also in the src folder are the react app and index files that render the components as well as the css file, all of which get copied into the public and build folder when I deploy to GitHub Pages.
 
 <br/>
 
@@ -41,20 +37,6 @@ A portfolio with React helps set you apart from other developers who shy away fr
 -   HTML
 -   CSS
 -   GitHub Pages
-
-<br/>
-
-## **Things I learned**
-
--   I got to know, intimately, the MUI react component library and MUI system CSS utilities. Even their most basic components add a lot to the polished look of the app.
--   When trying to validate a successful contact form submission and render the About component instead of the Contact component, I learned about React refs. I learned that refs cannot be used on function components and didn't feel like restructuring the App function component into an extended React.Component class. I opted to use a set timeout function on the submission thank you message element. The timer changes the html element's state variable so that it unrenders after three seconds. I also noticed that a field is not properly validated if one uses autofill instead of clicking in the input field (focusing). So when the form is submitted, I render an error message if any of the form input was an empty string.
--   I also cemented my knowledge of basic react app creation. Originally I tried to duplicate the files from the module where applicable, but one is not suppoesd to manually build a react app from scratch. I used the create-react-app command in git and it set up the initial file structure for me. Because I had already started to manually build the react app, I had to change my GitHub head, and then move the files to the correct react project folder. Fun stuff.
-
-<br/>
-
-## **What makes this project stand out?**
-
--   The content rendering and use of state variables make this app impressive to me. I really like simple file structure and minimal code to dynamically render content.
 
 <br/>
 
@@ -104,9 +86,23 @@ GIVEN a single-page application portfolio for a web developer<br/>
 
 <br/>
 
-## **Screenshot of Web Application**
+## **Screenshot**
 
 ![webapp-homepage](./src/assets/react-port-screenshot.png)
+
+<br/>
+
+## **Things I learned**
+
+-   I got to know, intimately, the MUI react component library and MUI system CSS utilities. Even their most basic components add a lot to the polished look of the app.
+-   When trying to validate a successful contact form submission and render the About component instead of the Contact component, I learned about React refs. I learned that refs cannot be used on function components and didn't feel like restructuring the App function component into an extended React.Component class. I opted to use a set timeout function on the submission thank you message element. The timer changes the html element's state variable so that it unrenders after three seconds. I also noticed that a field is not properly validated if one uses autofill instead of clicking in the input field (focusing). So when the form is submitted, I render an error message if any of the form input was an empty string.
+-   I also cemented my knowledge of basic react app creation. Originally I tried to duplicate the files from the module where applicable, but one is not suppoesd to manually build a react app from scratch. I used the create-react-app command in git and it set up the initial file structure for me. Because I had already started to manually build the react app, I had to change my GitHub head, and then move the files to the correct react project folder. Fun stuff.
+
+<br/>
+
+## **What makes this project stand out?**
+
+-   The content rendering and use of state variables make this app impressive to me. I really like simple file structure and minimal code to dynamically render content.
 
 <br/>
 
