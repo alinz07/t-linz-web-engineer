@@ -11,7 +11,7 @@
 ## **Table of Contents**
 
 [Motvation and Code Overview](#motivation-and-code-overview) <br/>
-[Tech Used](#technologies-used) <br/>
+[Technologies Used](#technologies-used) <br/>
 [User Story](#user-story)<br/>
 [Instructions to Run App](#instructions-to-run-app)<br/>
 [Screenshot](#screenshot)<br/>
