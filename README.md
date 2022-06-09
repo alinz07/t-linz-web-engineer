@@ -10,7 +10,7 @@
 
 ## **Table of Contents**
 
-[Motvation and Overview](#motivation-and-overview) <br/>
+[Motvation and Code Overview](#motivation-and-code-overview) <br/>
 [Tech Used](#technologies-used) <br/>
 [User Story](#user-story)<br/>
 [Instructions to Run App](#instructions-to-run-app)<br/>
@@ -21,7 +21,7 @@
 
 <br/>
 
-## **Motivation and Overview**
+## **Motivation and Code Overview**
 
 A portfolio with React helps set you apart from other developers who shy away from the latest technologies. A Single Page Application build with React is a great place for me to share my projects with propspective employers and fellow developers, with whom I can collaborate on current/future projects.
 
