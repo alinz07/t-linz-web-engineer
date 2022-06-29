@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/t-linz-web-engineer/static/css/main.47d0b256.css",
-    "main.js": "/t-linz-web-engineer/static/js/main.d4d415a8.js",
+    "main.js": "/t-linz-web-engineer/static/js/main.1f3d50d2.js",
     "static/media/lazarescu-alexandra-unsplash.jpg": "/t-linz-web-engineer/static/media/lazarescu-alexandra-unsplash.c3e0d89e868fc3eafc37.jpg",
     "static/media/mitchell-luo-unsplash.jpg": "/t-linz-web-engineer/static/media/mitchell-luo-unsplash.4ce838d8cdcfff14f03b.jpg",
     "static/media/bookworm.png": "/t-linz-web-engineer/static/media/bookworm.f0a9cb1aaeed1c679d04.png",
@@ -14,10 +14,10 @@
     "static/media/budget-tracker.png": "/t-linz-web-engineer/static/media/budget-tracker.ce69793c0d9c46b12681.png",
     "index.html": "/t-linz-web-engineer/index.html",
     "main.47d0b256.css.map": "/t-linz-web-engineer/static/css/main.47d0b256.css.map",
-    "main.d4d415a8.js.map": "/t-linz-web-engineer/static/js/main.d4d415a8.js.map"
+    "main.1f3d50d2.js.map": "/t-linz-web-engineer/static/js/main.1f3d50d2.js.map"
   },
   "entrypoints": [
     "static/css/main.47d0b256.css",
-    "static/js/main.d4d415a8.js"
+    "static/js/main.1f3d50d2.js"
   ]
 }
