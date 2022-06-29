@@ -15,7 +15,10 @@ function Header(props) {
             id="header"
         >
             <Grid item xs={12} id="hero" mt={3}>
-                <a href="/" id="nameboard-home-link">
+                <a
+                    href="https://alinz07.github.io/t-linz-web-engineer/"
+                    id="nameboard-home-link"
+                >
                     <h1 id="my-name">Tony Linz</h1>
                     <h2 id="subtitle">Full Stack Web Engineer</h2>
                 </a>
