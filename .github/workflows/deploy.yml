@@ -1,0 +1,36 @@
+name: Deploy CRA to gh-pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # react-scripts 5 plays nicest with Node 18
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      # (SPA fix) serve index.html for unknown routes on GitHub Pages
+      - name: Add 404.html for SPA routing
+        run: cp build/index.html build/404.html
+
+      # Publish /build to gh-pages
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true
