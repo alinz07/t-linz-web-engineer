@@ -14,7 +14,7 @@ function Project() {
 			desc: "A static web page for a client's mobile charcuterie bar business that leverages smoothe rendering from vites lazy loading.",
 		},
 		{
-			name: "Linz-Linz Exercises",
+			name: "Linz-Ling Exercises",
 			tech: "MongoDB Atlas, Express, React, Node, Javascript",
 			imgName: "linzling.png",
 			alt: "linzling logged in page",
