@@ -20,7 +20,7 @@ function Project() {
 			alt: "linzling logged in page",
 			repo: "https://github.com/alinz07/mern-deploy",
 			aitchref: "https://mern-deploy-1-hixt.onrender.com/",
-			desc: "Still in development, this appliaction is to help my sister who is a teach for the deaf and hard of hearing. It's a MERN app that helps track her students' daily audio equipment checks.",
+			desc: "Still in development, this appliaction is to help my sister who is a teacher for the deaf and hard of hearing. It's a MERN app that helps track her students' daily audio equipment checks.",
 		},
 		{
 			name: "National Parks Info and Weather",
