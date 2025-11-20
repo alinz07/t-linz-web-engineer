@@ -41,24 +41,6 @@ function Project() {
 			aitchref: "https://alinz07.github.io/photo-port/",
 			desc: "A mock Photographer's portfolio leveraging React and a suite of Jest tests for the components. I contributed by converting this to a React app. The HTML, CSS and most Javascript logic was already written by the University.",
 		},
-		{
-			name: "Propagatorz",
-			tech: "React, GraphQL, Node, Express, MongoDB, Mongoose, MUI ReactComponent Library, Cloudinary API, bcrypt",
-			imgName: "propagatorz.png",
-			alt: "Propagatorz homepage",
-			repo: "https://github.com/alinz07/Propagatorz",
-			aitchref: "https://propagatorz-plant-help.herokuapp.com/",
-			desc: "A social media solution for users to connect with other plant enthusiasts for all their plant questions or to show off their plant babies. My contributions were on the back and front-end. I set up the express server to connect to MongoDB, Mongoose, GraphQL and Apollo Server, set up global state, actions and reducers, wrote mutations and queries, added CSS and coded the post and update post form components. Login: betty@email.com Password: password",
-		},
-		{
-			name: "Ton's Tech Blog",
-			tech: "MVC paradigm, Handlebars, Sequelize (ORM), Express-Session, Node",
-			imgName: "tons-tech-blog.png",
-			alt: "Ton's Tech Blog homepage",
-			repo: "https://github.com/alinz07/mvc-techblog",
-			aitchref: "https://tons-tech-blog.herokuapp.com/",
-			desc: "A social media platform that follows the MVC paradigm using SQL and Sequelize, Handlebars.js and Express-Session with cookies for user authentication. I was the sole contributor. Login username: bilbo  Password: precious",
-		},
 	];
 	return (
 		<Grid
